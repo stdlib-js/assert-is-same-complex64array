@@ -35,30 +35,38 @@ limitations under the License.
 
 > Test if two arguments are both [Complex64Arrays][@stdlib/array/complex64] and have the [same values][@stdlib/assert/is-same-value].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-same-complex64array
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isSameComplex64Array = require( '@stdlib/assert-is-same-complex64array' );
+isSameComplex64Array = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64array@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var isSameComplex64Array = require( 'path/to/vendor/umd/assert-is-same-complex64array/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64array@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isSameComplex64Array;
+})();
+</script>
 ```
 
 #### isSameComplex64Array( v1, v2 )
@@ -97,9 +105,14 @@ bool = isSameComplex64Array( x, [ 1.0, 2.0 ] );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Complex64Array = require( '@stdlib/array-complex64' );
-var isSameComplex64Array = require( '@stdlib/assert-is-same-complex64array' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64array@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 var y = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -115,6 +128,11 @@ x = new Complex64Array( [ NaN, NaN, NaN, NaN ] );
 y = new Complex64Array( [ NaN, NaN, NaN, NaN ] );
 out = isSameComplex64Array( x, y );
 // returns true
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -207,17 +225,17 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-same-complex64array/main/LICENSE
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/umd
 
-[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
+[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array
+[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array/tree/umd
 
-[@stdlib/assert/is-same-complex128array]: https://github.com/stdlib-js/assert-is-same-complex128array
+[@stdlib/assert/is-same-complex128array]: https://github.com/stdlib-js/assert-is-same-complex128array/tree/umd
 
-[@stdlib/assert/is-same-float32array]: https://github.com/stdlib-js/assert-is-same-float32array
+[@stdlib/assert/is-same-float32array]: https://github.com/stdlib-js/assert-is-same-float32array/tree/umd
 
 <!-- </related-links> -->
 
