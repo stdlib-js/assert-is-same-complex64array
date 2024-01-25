@@ -125,6 +125,15 @@ out = isSameComplex64Array( x, y );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-complex64array`][@stdlib/assert/is-complex64array]</span><span class="delimiter">: </span><span class="description">test if a value is a Complex64Array.</span>
+-   <span class="package-name">[`@stdlib/assert-is-same-complex128array`][@stdlib/assert/is-same-complex128array]</span><span class="delimiter">: </span><span class="description">test if two arguments are both Complex128Arrays and have the same values.</span>
+-   <span class="package-name">[`@stdlib/assert-is-same-float32array`][@stdlib/assert/is-same-float32array]</span><span class="delimiter">: </span><span class="description">test if two arguments are both Float32Arrays and have the same values.</span>
+-   <span class="package-name">[`@stdlib/assert-is-same-value`][@stdlib/assert/is-same-value]</span><span class="delimiter">: </span><span class="description">test if two arguments are the same value.</span>
+
 </section>
 
 <!-- /.related -->
@@ -168,8 +177,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-same-complex64array.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-same-complex64array
 
-[test-image]: https://github.com/stdlib-js/assert-is-same-complex64array/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/assert-is-same-complex64array/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/assert-is-same-complex64array/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/assert-is-same-complex64array/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-same-complex64array/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-same-complex64array?branch=main
@@ -201,6 +210,16 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
 
 [@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array
+
+[@stdlib/assert/is-same-complex128array]: https://github.com/stdlib-js/assert-is-same-complex128array
+
+[@stdlib/assert/is-same-float32array]: https://github.com/stdlib-js/assert-is-same-float32array
+
+<!-- </related-links> -->
 
 </section>
 
