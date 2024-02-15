@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSameComplex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64array@esm/index.mjs';
+import isSameComplex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64array@v0.2.0-esm/index.mjs';
 ```
 
 #### isSameComplex64Array( v1, v2 )
@@ -88,7 +88,7 @@ bool = isSameComplex64Array( x, [ 1.0, 2.0 ] );
 <script type="module">
 
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
-import isSameComplex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64array@esm/index.mjs';
+import isSameComplex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64array@v0.2.0-esm/index.mjs';
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 var y = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
